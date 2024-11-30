@@ -1,3 +1,3 @@
-#!/bin/bash 
-# display the body of a file 
-curl -sLfG "$1"
+#!/bin/bash
+# sends a DELETE request to the URL passed as the first argument and displays the body of the response
+curl -sX DELETE $1 -L

@@ -1,3 +1,3 @@
-#!/bin/bash
-# send delete
-curl -sX DELETE "$1"
+#!/bin/bash 
+# display the body of a file 
+curl -sLfG "$1"

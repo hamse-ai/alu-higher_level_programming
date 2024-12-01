@@ -43,3 +43,4 @@ def matrix_divided(matrix, div):
             inside.append(round((matrix[i][j]) / div, 2))
         new.append(inside)
     return new
+

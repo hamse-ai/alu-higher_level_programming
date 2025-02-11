@@ -1,5 +1,11 @@
 #!/usr/bin/node
-function add (a, b) {
-  console.log(a + b);
+
+const num = process.argv.slice(2);
+const x = Math.floor(num[0]);
+const y = Math.floor(num[1]);
+
+function add(a, b) {
+  const addition = a + b;
+  console.log(addition);
 }
-add(parseInt(process.argv[2]), parseInt(process.argv[3]));
+add(x, y);

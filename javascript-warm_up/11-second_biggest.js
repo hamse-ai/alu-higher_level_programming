@@ -1,13 +1,18 @@
 #!/usr/bin/node
-let max = 0;
-let secondMax = 0;
-for (const num of process.argv.slice(2).map(Number)) {
-  if (num > max) {
-    secondMax = max;
-    max = num;
-  }
-  if (num > secondMax && max > num) {
-    secondMax = num;
+
+const num = Math.floor(process.argv.slice(2)[0]);
+
+function Factorial(number) {
+  if (number === 1) {
+    return 1;
+  } else {
+    return number * Factorial(number - 1);
   }
 }
-console.log(secondMax);
+
+if (isNaN(num) === true) {
+  console.log(1);
+} else {
+  const result = Factorial(num);
+  console.log(result);
+}
